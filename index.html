@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>intro at Javascript</title>
+</head>
+<body>
+	<h2>Learning Javascript</h2>
+	<br />
+		<img src="bulboff.gif" id="mylamp" class="off" onclick="onoff()" >
+	<script>
+		function onoff() {
+			var l=document.querySelector("#mylamp");
+
+			if(l.className=="on"){
+				l.src="bulboff.gif";
+				l.className="off"
+			} else{
+				l.src="bulbon.gif";
+				l.className="on"
+			}
+		}
+	</script>
+</body>
+</html>
+
